@@ -13,9 +13,10 @@
 ```symfony server:start```
 	
 ### API
-## Booking
+#### Booking
 ```http://127.0.0.1:8000/api/v1/Booking```
-Принимает параметры:
+
+# Принимает параметры:
 flight_id - идентификатор рейса
 email - EMail пользователя
 seat - Посадочное место
@@ -36,7 +37,7 @@ seat - Посадочное место
     "email": "email@email.ru"
 }
 ```
-## CancelBooking
+#### CancelBooking
 ```http://127.0.0.1:8000/api/v1/CancelBooking```
 Принимает параметры:
 booking_id - идентификатор брони
@@ -57,7 +58,7 @@ booking_id - идентификатор брони
 }
 ```
 
-## BuyBooking
+#### BuyBooking
 ```http://127.0.0.1:8000/api/v1/BuyBooking```
 Принимает параметры:
 booking_id - идентификатор брони
@@ -78,7 +79,7 @@ booking_id - идентификатор брони
 }
 ```
 	
-## BuyedCancelBooking
+#### BuyedCancelBooking
 ```http://127.0.0.1:8000/api/v1/BuyedCancelBooking```
 Принимает параметры:
 booking_id - идентификатор брони
