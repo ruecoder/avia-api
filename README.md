@@ -21,17 +21,17 @@ email - EMail пользователя
 seat - Посадочное место
 
 Возвращает в случае ошибки:
-```{
+{
     "status": "fail",
     "text": "текст ошибки"
-}```
+}
 
 Возвращает в случае успеха:
-```{
+{
     "status": "success",
     "booking_id": "1"
     "email": "email@email.ru"
-}```
+}
 	
 ##CancelBooking
 ```http://127.0.0.1:8000/api/v1/CancelBooking```
@@ -39,16 +39,16 @@ seat - Посадочное место
 booking_id - идентификатор брони
 
 Возвращает в случае ошибки:
-```{
+{
     "status": "fail",
     "text": "текст ошибки"
-}```
+}
 Возвращает в случае успеха:
-```{
+{
     "status": "success",
     "booking_id": "1"
     "text": "текст о том, что все норм"
-}```
+}
 	
 ##BuyBooking
 ```http://127.0.0.1:8000/api/v1/BuyBooking```
@@ -56,16 +56,16 @@ booking_id - идентификатор брони
 booking_id - идентификатор брони
 
 Возвращает в случае ошибки:
-```{
+{
     "status": "fail",
     "text": "текст ошибки"
-}```
+}
 Возвращает в случае успеха:
-```{
+{
     "status": "success",
     "booking_id": "1"
     "text": "текст о том, что все норм"
-}```
+}
 	
 ##BuyedCancelBooking
 ```http://127.0.0.1:8000/api/v1/BuyedCancelBooking```
@@ -73,34 +73,34 @@ booking_id - идентификатор брони
 booking_id - идентификатор брони
 
 Возвращает в случае ошибки:
-```{
+{
     "status": "fail",
     "text": "текст ошибки"
-}```
+}
 Возвращает в случае успеха:
-```{
+{
     "status": "success",
     "booking_id": "1"
     "text": "текст о том, что все норм"
-}```
+}
 	
 ### Events
 ```http://127.0.0.1:8000/api/v1/callback/events```
 	
 Принимает в качестве параметра RAW-строку с JSON вида:
-```{
+{
 	"data": {	
 		"flight_id":1,
 		"triggered_at":1585012345,
 		"event":"flight_ticket_sales_completed",
 		"secret_key":"a1b2c3d4e5f6a1b2c3d4e5f6"
 	}
-}```
+}
 
 Поддерживает только два события. 
 flight_ticket_sales_completed - продажа билетов закрыта
 flight_canceled - рейс отменён
 
 Возвращает JSON вида
-```{"status":"ok"}```
+{"status":"ok"}
 	
