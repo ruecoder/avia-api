@@ -106,12 +106,12 @@
 ##### Принимает в качестве параметра RAW-строку с JSON вида:
 ```
 {
-	"data": {	
-		"flight_id":1,
-		"triggered_at":1585012345,
-		"event":"flight_ticket_sales_completed",
-		"secret_key":"a1b2c3d4e5f6a1b2c3d4e5f6"
-	}
+  "data": {	
+    "flight_id":1,
+    "triggered_at":1585012345,
+    "event":"flight_ticket_sales_completed",
+    "secret_key":"a1b2c3d4e5f6a1b2c3d4e5f6"
+  }
 }
 ```
 
